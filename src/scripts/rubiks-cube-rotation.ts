@@ -1,51 +1,52 @@
 import type { RubiksCube } from "./rubiks-cube-model";
 
 /*
-function UpFaceRotationLeft (rubikscube: RubiksCube, movements: number): RubiksCube {
+function upFaceRotationLeft (rubikscube: RubiksCube, movements: number): RubiksCube {
     
-}
-
-function UpFaceRotationRight (rubikscube: RubiksCube, movements: number): RubiksCube {
 
 }
 
-function FrontFaceRotationLeft (rubikscube: RubiksCube, movements: number): RubiksCube {
+function upFaceRotationRight (rubikscube: RubiksCube, movements: number): RubiksCube {
 
 }
 
-function FrontFaceRotationRight (rubikscube: RubiksCube, movements: number): RubiksCube {
+function frontFaceRotationLeft (rubikscube: RubiksCube, movements: number): RubiksCube {
 
 }
 
-function DownFaceRotationLeft (rubikscube: RubiksCube, movements: number): RubiksCube {
+function frontFaceRotationRight (rubikscube: RubiksCube, movements: number): RubiksCube {
 
 }
 
-function DownFaceRotationRight (rubikscube: RubiksCube, movements: number): RubiksCube {
+function downFaceRotationLeft (rubikscube: RubiksCube, movements: number): RubiksCube {
 
 }
 
-function BackFaceRotationLeft (rubikscube: RubiksCube, movements: number): RubiksCube {
+function downFaceRotationRight (rubikscube: RubiksCube, movements: number): RubiksCube {
 
 }
 
-function BackFaceRotationRight (rubikscube: RubiksCube, movements: number): RubiksCube {
+function backFaceRotationLeft (rubikscube: RubiksCube, movements: number): RubiksCube {
 
 }
 
-function LeftFaceRotationUp (rubikscube: RubiksCube, movements: number): RubiksCube {
+function backFaceRotationRight (rubikscube: RubiksCube, movements: number): RubiksCube {
 
 }
 
-function LeftFaceRotationDown (rubikscube: RubiksCube, movements: number): RubiksCube {
+function leftFaceRotationUp (rubikscube: RubiksCube, movements: number): RubiksCube {
 
 }
 
-function RightFaceRotationUp (rubikscube: RubiksCube, movements: number): RubiksCube {
+function leftFaceRotationDown (rubikscube: RubiksCube, movements: number): RubiksCube {
 
 }
 
-function RightFaceRotationDown (rubikscube: RubiksCube, movements: number): RubiksCube {
+function rightFaceRotationUp (rubikscube: RubiksCube, movements: number): RubiksCube {
+
+}
+
+function rightFaceRotationDown (rubikscube: RubiksCube, movements: number): RubiksCube {
 
 }
 */
