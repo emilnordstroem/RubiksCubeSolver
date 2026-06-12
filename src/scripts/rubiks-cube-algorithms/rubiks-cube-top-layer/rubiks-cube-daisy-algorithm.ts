@@ -13,11 +13,11 @@ function isDaisyComplete (face: string[][]): boolean {
     for (let row = 0; row < face.length; row++) {
         for (let column = 0; column < face[row].length; column++) {
             const squareColor: string = face[row][column]
-            if (isCorner(row, column) && !hasCorrectColor(squareColor, edge)) {
+            if (isCorner(row, column) && !hasColor(squareColor, edge)) {
                 return false
-            } else if (isEdge(row, column) && !hasCorrectColor(squareColor, edge)) {
+            } else if (isEdge(row, column) && !hasColor(squareColor, edge)) {
                 return false;
-            } else if (isCenter(row, column) && !hasCorrectColor(squareColor, center)) {
+            } else if (isCenter(row, column) && !hasColor(squareColor, center)) {
                 return false
             } 
         }
@@ -25,7 +25,7 @@ function isDaisyComplete (face: string[][]): boolean {
     return true
 }
 
-function hasCorrectColor(colorOfSquare: string, colorToMatch: string){
+function hasColor(colorOfSquare: string, colorToMatch: string){
     return colorOfSquare == colorToMatch
 }
 
