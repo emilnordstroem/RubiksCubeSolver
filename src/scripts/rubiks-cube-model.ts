@@ -7,10 +7,10 @@ function face (color: string) {
 }
 
 export class RubiksCube {
-    Up = face('white')
+    Up = face('yellow')
     Front = face('blue')
-    Down = face('yellow')
+    Down = face('white')
     Back = face('green')
-    Left = face('red')
-    Right = face('orange')
+    Left = face('orange')
+    Right = face('red')
 }
