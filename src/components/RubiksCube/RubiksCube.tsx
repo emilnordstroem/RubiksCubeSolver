@@ -1,9 +1,7 @@
 import { RubiksCube as RubiksCubeModel } from "../../scripts/rubiks-cube-model"
 import Face from "./Face"
 
-function RubiksCube () {
-    const rubiksCube: RubiksCubeModel = new RubiksCubeModel()
-
+function RubiksCube ({ rubiksCube }: { rubiksCube: RubiksCubeModel }) {
     return (
         <table>
             <tbody>
