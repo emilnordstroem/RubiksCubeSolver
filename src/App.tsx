@@ -1,12 +1,14 @@
+import Header from './components/Header'
+import RubiksCube from './components/RubiksCube'
 import './styles/App.css'
 
 function App() {
-
-  return (
-    <>
-      <h1>Rubiks cube solver</h1>
-    </>
-  )
+    return (
+      <>
+        <Header />
+        <RubiksCube />
+      </>
+    )
 }
 
 export default App
