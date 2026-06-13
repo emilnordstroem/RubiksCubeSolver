@@ -1,33 +1,27 @@
 import { RubiksCube as RubiksCubeModel } from "../scripts/rubiks-cube-model"
 
-function FaceLayout ({ face }: { face: string[][] }) {
-    return (
-        <table>
-            <tbody>
-                {face.map((row, rowIndex) => (
-                    <tr key={rowIndex}>
-                        {row.map((color, columnIndex) => (
-                            <td
-                                key={columnIndex}
-                                style={{
-                                    backgroundColor: color,
-                                    width: '40px',
-                                    height: '40px',
-                                    border: '2px solid #333',
-                                }}
-                            />
-                        ))}
-                    </tr>
-                ))}
-            </tbody>
-        </table>
-    )
-}
-
-function Face ({ face }: { face: string[][] | null }) {
+function Face ({ face }: { face: string[][] }) {
     return (
         <td>
-            {face && <FaceLayout face={face} />}
+            <table>
+                <tbody>
+                    {face.map((row, rowIndex) => (
+                        <tr key={rowIndex}>
+                            {row.map((color, columnIndex) => (
+                                <td
+                                    key={columnIndex}
+                                    style={{
+                                        backgroundColor: color,
+                                        width: '40px',
+                                        height: '40px',
+                                        border: '2px solid #333',
+                                    }}
+                                />
+                            ))}
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
         </td>
     )
 }
