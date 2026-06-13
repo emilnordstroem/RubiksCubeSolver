@@ -29,7 +29,7 @@ export function hasColor(colorOfSquare: string, colorToMatch: string){
     return colorOfSquare == colorToMatch
 }
 
-function isCorner (row: number, column: number): Boolean {
+export function isCorner (row: number, column: number): Boolean {
     return row == 0 && column == 0
         || row == 0 && column == 2
         || row == 2 && column == 0

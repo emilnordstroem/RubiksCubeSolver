@@ -3,12 +3,12 @@ import { frontFaceRotationLeft, frontFaceRotationRight } from "../../rubiks-cube
 import { rightFaceRotationDown, rightFaceRotationUp } from "../../rubiks-cube-rotations/rubiks-cube-right-rotation";
 import { upFaceRotationLeft, upFaceRotationRight } from "../../rubiks-cube-rotations/rubiks-cube-up-rotation";
 import { hasColor } from "../rubiks-cube-bottom-layer/rubiks-cube-daisy-algorithm";
-import { isYellowFish } from "./yellow-face-algorithm";
+import { hasNumberOfCornersOfColor } from "./yellow-face-algorithm";
 
 export function yellowCrossAlgorithm (rubikscube: RubiksCube): RubiksCube {
     const yellowFace = rubikscube.Up
     
-    if (isYellowCross(yellowFace) || isYellowFish(yellowFace)) {
+    if (isYellowCross(yellowFace) || hasNumberOfCornersOfColor(yellowFace, 3, 'yellow')) {
         return rubikscube
     }
 
@@ -45,7 +45,7 @@ function alignYellowPattern(rubikscube: RubiksCube): RubiksCube {
 }
 
 
-function isYellowCross(face: string[][]): boolean {
+export function isYellowCross(face: string[][]): boolean {
     return (hasColor(face[0][1], 'yellow') 
         && hasColor(face[1][0], 'yellow') 
         && hasColor(face[1][2], 'yellow') 
