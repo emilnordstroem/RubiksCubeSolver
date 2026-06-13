@@ -46,11 +46,10 @@ function alignYellowPattern(rubikscube: RubiksCube): RubiksCube {
 
 
 function isYellowCross(face: string[][]): boolean {
-    return (
-        hasColor(face[0][1], 'yellow') && // top edge
-        hasColor(face[1][0], 'yellow') && // left edge
-        hasColor(face[1][2], 'yellow') && // right edge
-        hasColor(face[2][1], 'yellow')    // bottom edge
+    return (hasColor(face[0][1], 'yellow') 
+        && hasColor(face[1][0], 'yellow') 
+        && hasColor(face[1][2], 'yellow') 
+        && hasColor(face[2][1], 'yellow')   
     )
 }
 
