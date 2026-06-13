@@ -39,16 +39,11 @@ function alignYellowPattern(rubikscube: RubiksCube): RubiksCube {
     const face = rubikscube.Up
 
     if (isYellowCross(face)) {
-        const leftFace = rubikscube.Left
-        while (!hasColor(leftFace[0][2], 'yellow')) {
-            rubikscube = upFaceRotationRight(rubikscube, 1)
-        }
         return rubikscube
     }
 
     if (hasNumberOfCornersOfColor(face, 2, 'yellow')) {
-        const frontFace = rubikscube.Front
-        while (hasColor(face[2][0], 'yellow') && !hasColor(frontFace[0][0], 'yellow')) {
+        while (hasColor(face[2][0], 'yellow')) {
             rubikscube = upFaceRotationRight(rubikscube, 1)
         }
         return rubikscube
