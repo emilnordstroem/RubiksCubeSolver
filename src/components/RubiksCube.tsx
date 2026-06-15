@@ -1,5 +1,5 @@
-import { RubiksCube as RubiksCubeModel } from "../../scripts/rubiks-cube-model"
-import Face from "./Face"
+import { RubiksCube as RubiksCubeModel } from "../scripts/rubiks-cube-model"
+import Face from "./RubiksCubeFace"
 
 function RubiksCube ({ rubiksCube }: { rubiksCube: RubiksCubeModel }) {
     return (
