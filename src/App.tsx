@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Header from './components/Header'
 import { RubiksCube as RubiksCubeModel } from './scripts/rubiks-cube-model'
 import RubiksCube from './components/RubiksCube'
+import SolutionInstructions from './components/SolutionInstructions'
 import './styles/App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
     <>
       <Header />
       <RubiksCube rubiksCube={rubiksCube} />
+      <SolutionInstructions />
     </>
   )
 }
