@@ -1,8 +1,8 @@
 import type { RubiksCube } from "../../rubiks-cube-model";
+import { hasColor } from "../../rubiks-cube-algoritmic-helpers/face-helpers";
 import { frontFaceRotationLeft, frontFaceRotationRight } from "../../rubiks-cube-rotations/rubiks-cube-front-rotation";
 import { rightFaceRotationDown, rightFaceRotationUp } from "../../rubiks-cube-rotations/rubiks-cube-right-rotation";
 import { upFaceRotationLeft, upFaceRotationRight } from "../../rubiks-cube-rotations/rubiks-cube-up-rotation";
-import { hasColor } from "../rubiks-cube-bottom-layer/rubiks-cube-daisy-algorithm";
 import { hasNumberOfCornersOfColor } from "./yellow-face-algorithm";
 
 export function yellowCrossAlgorithm (rubikscube: RubiksCube): RubiksCube {

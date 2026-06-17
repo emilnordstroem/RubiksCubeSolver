@@ -1,5 +1,5 @@
-import type { RubiksCube } from "../../rubiks-cube-model";
-import { hasColor } from "../rubiks-cube-bottom-layer/rubiks-cube-daisy-algorithm";
+import { hasColor } from "../../rubiks-cube-algoritmic-helpers/face-helpers"
+import type { RubiksCube } from "../../rubiks-cube-model"
 
 export function middleLayerAlgorithm (rubikscube: RubiksCube): RubiksCube {
     if (isMiddleLayerSolved(rubikscube)) {

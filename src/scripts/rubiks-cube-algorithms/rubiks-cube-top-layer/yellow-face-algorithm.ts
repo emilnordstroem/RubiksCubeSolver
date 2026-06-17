@@ -1,7 +1,7 @@
+import { hasColor, isCorner } from "../../rubiks-cube-algoritmic-helpers/face-helpers";
 import type { RubiksCube } from "../../rubiks-cube-model";
 import { rightFaceRotationDown, rightFaceRotationUp } from "../../rubiks-cube-rotations/rubiks-cube-right-rotation";
 import { upFaceRotationLeft, upFaceRotationRight } from "../../rubiks-cube-rotations/rubiks-cube-up-rotation";
-import { hasColor, isCorner } from "../rubiks-cube-bottom-layer/rubiks-cube-daisy-algorithm";
 
 export function yellowFaceAlgorithm (rubikscube: RubiksCube): RubiksCube {
     const yellowFace = rubikscube.Up
