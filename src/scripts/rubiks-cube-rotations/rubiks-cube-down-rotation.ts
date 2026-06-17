@@ -20,8 +20,8 @@ export function downFaceRotationRight (rubikscube: RubiksCube, movements: number
         const tempRow = [...rubikscube.Front[2]]
 
         rubikscube.Front[2] = [...rubikscube.Left[2]]
-        rubikscube.Right[2] = [...rubikscube.Front[2]]
-        rubikscube.Back[2]  = [...rubikscube.Right[2]]
+        rubikscube.Back[2] = [...rubikscube.Right[2]]
+        rubikscube.Left[2]  = [...rubikscube.Back[2]]
         rubikscube.Right[2]  = tempRow
     }
     return rubikscube

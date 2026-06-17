@@ -1,10 +1,15 @@
 import type { RubiksCube } from "../../rubiks-cube-model";
 
-/*
-export function daisyAlgorithm (rubikscube: RubiksCube): RubiksCube {
-    
+export function daisyAlgorithm (rubikscube: RubiksCube): RubiksCube {¨
+    if (isDaisyComplete(rubikscube.Up)) {
+        return rubikscube
+    }
+
+
+
+    return rubikscube
 }
-*/
+
 
 const center: string = 'yellow'
 const edge: string = 'white' 
@@ -13,9 +18,7 @@ function isDaisyComplete (face: string[][]): boolean {
     for (let row = 0; row < face.length; row++) {
         for (let column = 0; column < face[row].length; column++) {
             const squareColor: string = face[row][column]
-            if (isCorner(row, column) && !hasColor(squareColor, edge)) {
-                return false
-            } else if (isEdge(row, column) && !hasColor(squareColor, edge)) {
+            if (isEdge(row, column) && !hasColor(squareColor, edge)) {
                 return false;
             } else if (isCenter(row, column) && !hasColor(squareColor, center)) {
                 return false

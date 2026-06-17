@@ -19,10 +19,10 @@ export function upFaceRotationRight (rubikscube: RubiksCube, movements: number):
         rubikscube.Up = rotateFaceCounterClockwise(rubikscube.Up)
         const tempRow = [...rubikscube.Front[0]]
 
-        rubikscube.Front[0] = [...rubikscube.Left[0]]
-        rubikscube.Right[0] = [...rubikscube.Front[0]]
-        rubikscube.Back[0]  = [...rubikscube.Right[0]]
-        rubikscube.Right[0]  = tempRow
+        rubikscube.Front[2] = [...rubikscube.Left[2]]
+        rubikscube.Back[2] = [...rubikscube.Right[2]]
+        rubikscube.Left[2]  = [...rubikscube.Back[2]]
+        rubikscube.Right[2]  = tempRow
     }
     return rubikscube
 }
