@@ -1,6 +1,6 @@
 import type { RubiksCube } from "../../rubiks-cube-model"
-import { bringWhiteToUpEdge_Bottom, bringWhiteToUpEdge_Left, bringWhiteToUpEdge_Right, bringWhiteToUpEdge_Top } from "../../rubiks-cube-algoritmic-helpers/daisy-helpers"
-import { hasColor, isCenter, isEdge } from "../../rubiks-cube-algoritmic-helpers/face-helpers"
+import { bringWhiteToUpEdge_Bottom, bringWhiteToUpEdge_Left, bringWhiteToUpEdge_Right, bringWhiteToUpEdge_Top } from "../../rubiks-cube-helpers/daisy-helpers"
+import { hasColor, isCenter, isEdge } from "../../rubiks-cube-helpers/face-helpers"
 
 export function daisyAlgorithm(rubikscube: RubiksCube): RubiksCube {
     if (isDaisyComplete(rubikscube.Up)) {

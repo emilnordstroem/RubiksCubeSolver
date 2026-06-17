@@ -1,4 +1,4 @@
-import { hasColor, isCorner } from "../../rubiks-cube-algoritmic-helpers/face-helpers";
+import { hasColor, isCorner } from "../../rubiks-cube-helpers/face-helpers";
 import type { RubiksCube } from "../../rubiks-cube-model";
 import { rightFaceRotationDown, rightFaceRotationUp } from "../../rubiks-cube-rotations/rubiks-cube-right-rotation";
 import { upFaceRotationLeft, upFaceRotationRight } from "../../rubiks-cube-rotations/rubiks-cube-up-rotation";
